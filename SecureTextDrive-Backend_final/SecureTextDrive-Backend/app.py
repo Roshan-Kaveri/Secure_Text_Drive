@@ -19,7 +19,7 @@ app.secret_key = 'abcdlala'
 hostname = 'postgresql-ascscs.alwaysdata.net'
 database = 'ascscs_securedrive'
 username = 'ascscs'
-pwd = '@7sdDgVUuhCXjD6'
+pwd = '#########'
 port_id = 5432
 
 # Mail configuration
