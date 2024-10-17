@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='loginstyles.css') }}">
+    <title>Forgot Password</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="empty"></div>
+        </div>
+        <div class="right-panel">
+
+
+            <form action="{{ url_for('views.forgot_password') }}" method="POST" class="login-form">
+                <div class="box">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/ios-glyphs/90/000000/user--v1.png" alt="User Icon"/>
+                    </div>
+                    <div>
+                        <label class="inp-label">EMAIL</label>
+                        <input class="blue-input" type="email" name="email" placeholder="" required>
+                    </div>
+                <div class="flash-message">  {{error}} </div>
+                    <div class="login_btn_div">
+                        <button type="submit" class="login_btn">
+                            <span class="fbtn_txt">SEND PASSWORD</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        /* Example styles for flash messages */
+        .flash-messages {
+            margin-bottom: 20px;
+        }
+        .flash-message {
+            padding: 10px;
+            border: 1px solid #f0c0c0;
+            background-color: #f9d6d6;
+            color: #d8000c;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</body>
+</html>
